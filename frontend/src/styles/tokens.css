@@ -1,0 +1,49 @@
+:root {
+  /* Surface and Backgrounds - Obsidian & Cosmic Slate */
+  --bg-base: #060913;
+  --bg-surface: #0e1526;
+  --bg-panel: #151f38;
+  --bg-panel-hover: #1c2a4c;
+  --bg-glass: rgba(14, 21, 38, 0.75);
+  
+  /* Borders */
+  --border-subtle: #1e2d4d;
+  --border-glow: #00f2ff;
+  --border-focus: #38bdf8;
+
+  /* Brand Accents */
+  --accent-cyan: #00f2ff;
+  --accent-cyan-dim: #0284c7;
+  --accent-purple: #9333ea;
+  --accent-purple-glow: rgba(147, 51, 234, 0.25);
+  
+  /* Semantic Status Tokens (WCAG 2.2 AA compliant) */
+  --status-draft: #94a3b8;
+  --status-validating: #38bdf8;
+  --status-ready: #34d399;
+  --status-running-sim: #818cf8;
+  --status-running-hw: #f43f5e;
+  --status-complete: #10b981;
+  --status-failed: #ef4444;
+  --status-cancelled: #64748b;
+
+  /* Typography */
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', Menlo, Consolas, monospace;
+}
+
+/* Accessible focus styling */
+:focus-visible {
+  outline: 2px solid var(--accent-cyan) !important;
+  outline-offset: 2px !important;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
